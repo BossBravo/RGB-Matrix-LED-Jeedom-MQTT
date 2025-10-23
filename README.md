@@ -65,3 +65,4 @@ Evidemment ici je vous partage mon code avec mes informations que je souhaite af
 # Informations
 - Il subsiste un petit bug, de temps en temps l'écran s'éteint et le module ne reboot pas, je n'ai pas encore trouvé l'origine, j'ai juste à appuyer sur le bouton power pour le redémarrer.  
 - Je n'ai pas encore trouvé le moyen de le faire reboot une fois par jour, apaprement ce ne serait pas possible avec ce module  Matrix Portal, si quelqu'un trouve, je suis preneur. La commande QQTT screen/reboot ne fonctione donc pas pour le moment.
+- Je n'ai non plus pas réussi à contrôler la luminosité, il semblerai que ce soit pas faisable, idem si quelqu'un trouve, je suis preneur.
