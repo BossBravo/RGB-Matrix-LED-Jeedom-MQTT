@@ -14,12 +14,9 @@ Modifiez le fichier [settings.toml](settings.toml) avec vos paramètres wifi, je
 
 Source : [Matrix Portal M4 - Starter Guide](https://github.com/davidrazmadzeExtra/Matrix_Portal_M4_Starter/tree/main)
 
-## Starter guide for Matrix Portal M4
-
-This is a starter guide for the Matrix Portal M4 with LED Display. We will connect to your local network and to test the connection. The WiFi connection will be important for future projects.
-
 <hr />
 
+## MatrixPortal
 ### 1. Prep the MatrixPortal
 
 Connect power to the matrix display panel using the power terminals. Also install to the board via the connectors.
@@ -34,24 +31,33 @@ We will drag a `.uf2` file into the `MATRIXBOOT` Volume to get a `CIRCUITPY` dri
 
 https://learn.adafruit.com/adafruit-matrixportal-m4/install-circuitpython
 
-### 3. Download CircuitPython Libraries
-
-Download and extract the zip file and drag several folders into `CIRCUITPY/lib` to get started.
-
-`cp -r adafruit_matrixportal adafruit_portalbase adafruit_esp32spi neopixel.mpy adafruit_bus_device adafruit_requests.mpy adafruit_fakerequests.mpy adafruit_io adafruit_bitmap_font adafruit_display_text adafruit_lis3dh.mpy adafruit_minimqtt /Volumes/CIRCUITPY/lib`
-
-https://circuitpython.org/libraries
-
-### 4. Install the Mu Editor
+### 3. Install the Mu Editor
 
 This is the recommended editor you should be using for CircuitPython development.
 
 https://learn.adafruit.com/welcome-to-circuitpython/installing-mu-editor
 
-### 5. Connect to the Internet
+### 4. Put files
 
-Create a `secrets.py` file on your `CIRCUITPY` drive and then upload the `code.py` to connect to the Internet using WiFi.
-
-https://learn.adafruit.com/adafruit-matrixportal-m4/internet-connect
+Put all files from this repo inside the Adafruit Matrix Portal, it contains lib, code, settings
 
 <hr />
+
+## Jeedom
+### 1. Ajout Object MQTT
+Ajoutez un objet MQTT du même nom que l'objet dans le fichier settings.toml  
+<img width="115" height="141" alt="image" src="https://github.com/user-attachments/assets/d975f1b2-e138-42c6-9a62-fb5fce2a82a1" />  
+Mettez le même nom dans le topic racine  
+<img width="815" height="131" alt="image" src="https://github.com/user-attachments/assets/409f1af6-6de5-423e-b693-1673c1405708" />
+
+### 2. Ajouter commandes et infos
+Voici la liste des commandes et infos à ajouter, disponible sur le code  
+<img width="1890" height="1463" alt="image" src="https://github.com/user-attachments/assets/78a4f9aa-8687-43d8-9eb5-88afb5da0df9" />
+
+### 3. Pilotage
+Vous devez ensuite créer un scénario pour mettre à jour toutes ces données MQTT.  
+Evidemment ici je vous partage mon code avec mes informations que je souhaite afficher, vous pouvez très bien tout modifier de chaque côté, ajouter / supprimer des commandes.
+
+# Informations
+- Il subsiste un petit bug, de temps en temps l'écran s'éteint et le module ne reboot pas, je n'ai pas encore trouvé l'origine, j'ai juste à appuyer sur le bouton power pour le redémarrer.  
+- Je n'ai pas encore trouvé le moyen de le faire reboot une fois par jour, apaprement ce ne serait pas possible avec ce module  Matrix Portal, si quelqu'un trouve, je suis preneur. La commande QQTT screen/reboot ne fonctione donc pas pour le moment.
