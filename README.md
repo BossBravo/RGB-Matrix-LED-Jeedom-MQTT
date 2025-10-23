@@ -6,24 +6,19 @@
 # Outils
 - [Convert image to pixels](https://giventofly.github.io/pixelit/#tryit)
 - [RGB LED Matrices with CircuitPython](https://learn.adafruit.com/rgb-led-matrices-matrix-panels-with-circuitpython/advanced-multiple-panels)
-- [RGB LED Matrices with CircuitPython](https://learn.adafruit.com/rgb-led-matrices-matrix-panels-with-circuitpython/advanced-multiple-panels)
 
 # Configuration
-Modifiez le fichier
+Modifiez le fichier [settings.toml](settings.toml) avec vos paramètres wifi, jeedom et mqtt
 
 # Installation
 
 Source : [Matrix Portal M4 - Starter Guide](https://github.com/davidrazmadzeExtra/Matrix_Portal_M4_Starter/tree/main)
 
-## Description
+## Starter guide for Matrix Portal M4
 
 This is a starter guide for the Matrix Portal M4 with LED Display. We will connect to your local network and to test the connection. The WiFi connection will be important for future projects.
 
 <hr />
-
-## Guide
-
-We will be following this guide: https://learn.adafruit.com/adafruit-matrixportal-m4+
 
 ### 1. Prep the MatrixPortal
 
