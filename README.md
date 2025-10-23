@@ -1,3 +1,7 @@
+# Visuel
+<img width="4032" height="2268" alt="image" src="https://github.com/user-attachments/assets/2a6b47ce-9772-4806-87ed-57d788727399" />
+
+
 # Matériel
 - [Adafruit Matrix Portal - CircuitPython Powered](https://www.adafruit.com/product/4745)
 - [64x32 RGB LED Matrix](https://www.adafruit.com/product/2278)
